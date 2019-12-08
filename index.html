@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type="text/css">
+      a:hover {
+        cursor:pointer;
+      }
+    </style>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="utf-8" />
+    <title>Kim</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(function(){
+        
+        var canvas = $("#canvas")[0];
+        var c = canvas.getContext("2d");
+        
+        c.fillStyle = "black";
+        c.fillRect(0, 0, canvas.width, canvas.height);
+        
+        $(document).mousemove(function(e){
+        c.fillStyle = "white";
+        c.fillRect(e.pageX, e.pageY, 10, 10);
+        });
+        
+       });
+      $(function(){
+        
+        var canvas3 = $("#canvas3")[0];
+        var c3 = canvas3.getContext("2d");
+        
+        c3.fillStyle = "black";
+        c3.fillRect(0, 0, canvas3.width, canvas3.height);
+        
+        $(document).mousemove(function(e){
+        c3.fillStyle = "red";
+        c3.fillRect(e.pageX, e.pageY, 25, 25);
+        });
+        
+       });
+      $(function(){
+        
+        var canvas2 = $("#canvas2")[0];
+        var c2 = canvas2.getContext("2d");
+        
+        c2.fillStyle = "black";
+        c2.fillRect(0, 0, canvas2.width, canvas2.height);
+        
+        $(document).mousemove(function(e){
+        c2.fillStyle = "yellow";
+        c2.fillRect(e.pageX, e.pageY, 5, 5);
+        });
+        
+       });
+      function myFunction() {
+        var x = document.getElementById("extra");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function myFunction2() {
+        var x = document.getElementById("extra2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function myFunction3() {
+        var x = document.getElementById("extra3");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function myFunction4() {
+        var x = document.getElementById("canvas");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function myFunction5() {
+        var x = document.getElementById("canvas2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function myFunction6() {
+        var x = document.getElementById("canvas3");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      
+    </script>
+    <style>
+      
+      
+      
+      body {
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+        cursor: url("coolcursortest.jpg"), pointer;
+      }
+      
+      
+      div.one {
+        position: fixed;
+        top: 15%;
+        left: 34%;  
+      }
+      div.text1 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 15%;
+        top: 45%;
+        display: none;
+        z-index: 2;
+      }
+      div.one:hover + div.text1{
+        display: inline;
+      }
+      
+      div.two {
+        position: fixed;
+        top: 50%;
+        left: 65%;  
+      }
+      div.text2 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 15%;
+        top: 35%;
+        display: none;
+        z-index: 2;
+      }
+      div.two:hover + div.text2{
+        display: inline;
+      }
+      
+      div.three {
+        position: fixed;
+        top: 80%;
+        left: 60%;  
+      }
+      div.text3 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 90%;
+        display: none;
+        z-index: 2;
+      }
+      div.three:hover + div.text3{
+        display: inline;
+      }
+      
+      div.four {
+        position: fixed;
+        top: 65%;
+        left: 15%;  
+      }
+      div.text4 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 20%;
+        top: 15%;
+        display: none;
+        z-index: 2;
+      }
+      div.four:hover + div.text4{
+        display: inline;
+      }
+      
+      div.five {
+        position: fixed;
+        top: 2%;
+        left: 25%; 
+        z-index: 1; 
+      }
+      div.text5 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 60%;
+        top: 35%;
+        display: none;
+        z-index: 2;
+      }
+      div.five:hover{
+        box-shadow: 2px 2px 5px blue;
+      }
+      
+      div.six {
+        position: fixed;
+        top: 20%;
+        left: 2%; 
+        z-index: 1; 
+      }
+      
+      div.six:hover{
+        box-shadow: 2px 2px 5px pink;
+      }
+      
+      div.seven {
+        position: fixed;
+        top: 10%;
+        left: 88%;  
+      }
+      div.text7 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 60%;
+        top: 35%;
+        display: none;
+        z-index: 2;
+      }
+      div.seven:hover + div.text7{
+        display: inline;
+      }
+      
+      div.eight {
+        position: fixed;
+        top: 2%;
+        left: 70%; 
+        z-index: 1; 
+      }
+      
+      div.eight:hover{
+        box-shadow: 2px 2px 5px yellow;
+      }
+      
+      div.nine {
+        position: fixed;
+        top: 70%;
+        left: 88%;  
+        z-index: 1;
+      }
+      div.text9 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 60%;
+        top: 35%;
+        display: none;
+        z-index: 2;
+        
+      }
+      div.nine:hover{
+        box-shadow: 2px 2px 5px lime;
+      }
+      
+      div.ten {
+        position: fixed;
+        top: 88%;
+        left: 0%;  
+      }
+      div.text10 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 0%;
+        top: 55%;
+        display: none;
+        z-index: 2;
+      }
+      div.ten:hover + div.text10{
+        display: inline;
+      }
+      div.eleven {
+        position: fixed;
+        top: 50%;
+        left: 30%;  
+      }
+      div.text11 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 55%;
+        top: 42%;
+        display: none;
+        z-index: 2;
+      }
+      div.eleven:hover + div.text11{
+        display: inline;
+      }
+      div.twelve {
+        position: fixed;
+        top: 30%;
+        left: 50%;  
+        z-index: 1;
+      }
+      div.text12 {
+        color: white;
+        font-size: 15px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 50%;
+        top: 20%;
+        display: none;
+        z-index: 2;
+        
+      }
+      div.twelve:hover + div.text12{
+        display: inline;
+      }
+      div.thirteen {
+        position: fixed;
+        top: 45%;
+        left: 80%; 
+      }
+      div.text13 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 90%;
+        display: none;
+        z-index: 2;
+      }
+      div.thirteen:hover + div.text13{
+        display: inline;
+      }
+      div.fourteen {
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        z-index: 1;
+      }
+      div.fourteen:hover{
+        box-shadow: 2px 2px 5px white;
+      }
+      div.fifteen {
+        position: fixed;
+        top: 75%;
+        left: 20%;
+        z-index: 1;
+      }
+      div.fifteen:hover{
+        box-shadow: 2px 2px 5px green;
+      }
+      
+      #extra {
+        display: none;
+      }
+      
+      .e1 {
+        position: fixed;
+        top:10%;
+        left:0%;
+      }
+      div.et1 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 55%;
+        top: 20%;
+        display: none;
+        z-index: 2;
+      }
+      div.e1:hover + div.et1{
+        display: inline;
+      }
+      
+      .e2 {
+        position: fixed;
+        top:44%;
+        left:43%;
+      }
+      div.et2 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 28%;
+        top: 0%;
+        display: none;
+        z-index: 2;
+      }
+      div.e2:hover + div.et2{
+        display: inline;
+      }
+      .e3 {
+        position: fixed;
+        top:80%;
+        left:80%;
+      }
+      div.et3 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 8%;
+        top: 15%;
+        display: none;
+        z-index: 2;
+      }
+      div.e3:hover + div.et3{
+        display: inline;
+      }
+      .e4 {
+        position: fixed;
+        top:70%;
+        left:40%;
+      }
+      div.et4 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 12%;
+        display: none;
+        z-index: 2;
+      }
+      div.e4:hover + div.et4{
+        display: inline;
+      }
+      .e5 {
+        position: fixed;
+        top:10%;
+        left:60%;
+      }
+      div.et5 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 37%;
+        display: none;
+        z-index: 2;
+      }
+      div.e5:hover + div.et5{
+        display: inline;
+      }
+      .e6 {
+        position: fixed;
+        top:65%;
+        left:60%;
+      }
+      div.et6 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 70%;
+        top: 20%;
+        display: none;
+        z-index: 2;
+      }
+      div.e6:hover + div.et6{
+        display: inline;
+      }
+      .e7 {
+        position: fixed;
+        top:90%;
+        left:90%;
+      }
+      div.et7 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 90%;
+        display: none;
+        z-index: 2;
+      }
+      div.e7:hover + div.et7{
+        display: inline;
+      }
+      .e8 {
+        position: fixed;
+        top:40%;
+        left:15%;
+      }
+      div.et8 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 90%;
+        display: none;
+        z-index: 2;
+      }
+      div.e8:hover + div.et8{
+        display: inline;
+      }
+      
+      .r1 {
+        position: fixed;
+        top:10%;
+        left:20%;
+      }
+      div.rt1 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 55%;
+        top: 20%;
+        display: none;
+        z-index: 2;
+      }
+      div.r1:hover + div.rt1{
+        display: inline;
+      }
+      
+      .r2 {
+        position: fixed;
+        top:44%;
+        left:0%;
+      }
+      div.rt2 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 28%;
+        top: 0%;
+        display: none;
+        z-index: 2;
+      }
+      div.r2:hover + div.rt2{
+        display: inline;
+      }
+      .r3 {
+        position: fixed;
+        top:70%;
+        left:70%;
+      }
+      div.rt3 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 8%;
+        top: 15%;
+        display: none;
+        z-index: 2;
+      }
+      div.r3:hover + div.rt3{
+        display: inline;
+      }
+      .r4 {
+        position: fixed;
+        top:0%;
+        left:80%;
+      }
+      div.rt4 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 12%;
+        display: none;
+        z-index: 2;
+      }
+      div.r4:hover + div.rt4{
+        display: inline;
+      }
+      .r5 {
+        position: fixed;
+        top:75%;
+        left:0%;
+      }
+      div.rt5 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 37%;
+        display: none;
+        z-index: 2;
+      }
+      div.r5:hover + div.rt5{
+        display: inline;
+      }
+      .r6 {
+        position: fixed;
+        top:30%;
+        left:70%;
+      }
+      div.rt6 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 70%;
+        top: 20%;
+        display: none;
+        z-index: 2;
+      }
+      div.r6:hover + div.rt6{
+        display: inline;
+      }
+      .r7 {
+        position: fixed;
+        top:0%;
+        left:43%;
+      }
+      div.rt7 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 90%;
+        display: none;
+        z-index: 2;
+      }
+      div.r7:hover + div.rt7{
+        display: inline;
+      }
+      .r8 {
+        position: fixed;
+        top:20%;
+        left:50%;
+      }
+      div.rt8 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 90%;
+        display: none;
+        z-index: 2;
+      }
+      div.r8:hover + div.rt8{
+        display: inline;
+      }
+      .r9 {
+        position: fixed;
+        top:30%;
+        left:60%;
+      }
+      div.rt9 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 55%;
+        top: 20%;
+        display: none;
+        z-index: 2;
+      }
+      div.r9:hover + div.rt9{
+        display: inline;
+      }
+      
+      .r10 {
+        position: fixed;
+        top:90%;
+        left:43%;
+      }
+      div.rt10 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 28%;
+        top: 0%;
+        display: none;
+        z-index: 2;
+      }
+      div.r10:hover + div.rt10{
+        display: inline;
+      }
+      
+      .s1 {
+        position: fixed;
+        top:90%;
+        left:20%;
+      }
+      div.st1 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 55%;
+        top: 20%;
+        display: none;
+        z-index: 2;
+      }
+      div.s1:hover + div.st1{
+        display: inline;
+      }
+      
+      .s2 {
+        position: fixed;
+        top:85%;
+        left:90%;
+      }
+      div.st2 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 28%;
+        top: 0%;
+        display: none;
+        z-index: 2;
+      }
+      div.s2:hover + div.st2{
+        display: inline;
+      }
+      .s3 {
+        position: fixed;
+        top:10%;
+        left:10%;
+      }
+      div.st3 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 8%;
+        top: 15%;
+        display: none;
+        z-index: 2;
+      }
+      div.s3:hover + div.st3{
+        display: inline;
+      }
+      .s4 {
+        position: fixed;
+        top:0%;
+        left:95%;
+      }
+      div.st4 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 12%;
+        display: none;
+        z-index: 2;
+      }
+      div.s4:hover + div.st4{
+        display: inline;
+      }
+      .s5 {
+        position: fixed;
+        top:60%;
+        left:95%;
+      }
+      div.st5 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 37%;
+        display: none;
+        z-index: 2;
+      }
+      div.s5:hover + div.st5{
+        display: inline;
+      }
+      .s6 {
+        position: fixed;
+        top:65%;
+        left:90%;
+      }
+      div.st6 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 70%;
+        top: 20%;
+        display: none;
+        z-index: 2;
+      }
+      div.s6:hover + div.st6{
+        display: inline;
+      }
+      .s7 {
+        position: fixed;
+        top:95%;
+        left:95%;
+      }
+      div.st7 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        display: none;
+        z-index: 2;
+      }
+      div.s7:hover + div.st7{
+        display: inline;
+      }
+      .s8 {
+        position: fixed;
+        top:70%;
+        left:30%;
+      }
+      div.st8 {
+        color: white;
+        font-size: 10px;
+        font-family: NB International Pro;
+        position: fixed;
+        left: 10%;
+        top: 90%;
+        display: none;
+        z-index: 2;
+      }
+      div.s8:hover + div.st8{
+        display: inline;
+      }
+      
+      
+      
+      #extra2 {
+        display: none;
+      }
+      
+      #extra3 {
+        display: none;
+      } 
+      #canvas {
+      display: none;
+      }
+      #canvas2 {
+      display: none;
+      }
+      #canvas3 {
+      display: none;
+      }
+      
+      /* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/special/spe-1/spe89.cur), auto !important;} /* End 
+    </style>
+  </head>
+  <body>
+    <button onclick="myFunction()">:)</button>
+    <button onclick="myFunction2()">:|</button>
+    <button onclick="myFunction3()"><3</button>
+      <button onclick="myFunction4()">!</button>
+      <button onclick="myFunction5()">!!</button>
+      <button onclick="myFunction6()">!!!</button>
+      
+      
+      <div id="container">
+        
+        <div id="content" body style="margin: 0px; height: 100%; width: 100%;"> 
+        </div>
+        <canvas id="canvas" width="2000px" height="1000px">
+      Go get chrome! <!-- default msg displayed if canvas fails -->
+    </canvas>
+        <canvas id="canvas2" width="2000px" height="1000px">
+      Go get chrome! <!-- default msg displayed if canvas fails -->
+    </canvas>
+        <canvas id="canvas3" width="2000px" height="1000px">
+      Go get chrome! <!-- default msg displayed if canvas fails -->
+    </canvas>
+        <div class="one"><img src="girls1.png" alt="" style= ""></div>
+        <div class="text1"> Me on a rainy day consuming all the acid precipitation, getting my wet deposition</div>
+        <div class="two"><img src="girls2.png" alt="" style= ""></div>
+        <div class="text2"> Tried to type out <br> "I love simultaneously" <br> but Apple corrected it to <br> "I live simultaneously"</div>
+        <div class="three"><img src="girls3.png" alt="" style= ""></div>
+        <div class="text3"> Me screaming "I JUST WANT TO FUCK THE TACO BELL SOCIAL MEDIA INTERN"<br> at my friend who is just trying to have a chill time eating Doritos<br> on the couch</div>
+        <div class="four"><img src="girls4.png" alt="" style= ""></div>
+        <div class="text4"> How to kill <br/>
+          
+          2 birds 1 stone <br/>
+          2 cups 1 girl<br/>
+          2 stones 1 bird<br/>
+          2 girls 1 cup <br/>
+          2 birds 1 girl<br/>
+          2 girls 1 stone<br/>
+          2 cups 1 bird<br/>
+          2 stones 1 girl<br/>
+          2 birds 1 cup <br/>
+          2 girls 1 bird <br/>
+          2 cups 1 stone<br/>
+        </div>
+        <a href="emails.html"><div class="five"><img src="girls5.png" alt="" style= ""></div></a>
+        <div class="text5"> Me bopping to the phrase “damn bitch who hurt you?” <br> 69 times in the past 2 minutes </div>
+        <a href="love.html"> <div class="six"><img src="girls6.png" alt="" style= ""></div></a>
+        
+        <div class="seven"><img src="girls7.png" alt="" style= ""></div><div class="text7"> Me @ my anxiety about my knife dilemma</div>
+        <a href="nyc.html"> <div class="eight"><img src="image.png" alt="" style= ""></div></a>
+        
+        <a href="Hairelastic.html"><div class="nine"><img src="image2.png" alt="" style= ""></div></a>
+        <div class="text9"> Me bopping to the phrase “damn bitch who hurt you?” <br> 69 times in the past 2 minutes </div>
+        <div class="ten"><img src="image3.png" alt="" style= ""></div>
+        <div class="text10">I used to imagine telling ppl that <br> I’m two types of “bi” but I can’t <br> do that cuz I am actually just a pan
+        </div>
+        <div class="eleven"><img src="image4.png" alt="" style= ""></div>
+        <div class="text11"> Me bopping to the phrase “damn bitch who hurt you?” <br> 69 times in the past 2 minutes </div> 
+        <div class="twelve"><img src="image5.png" alt="" style= ""></div>
+        <div class="text12">You: come over to my house <br> Me: I can’t I’m working <br>You: I’m doing arts and crafts <br>Me: <br/><img src="bigpic.png" alt="">
+        </div>
+        <div class="thirteen"><img src="IMG_6740.png" alt="" style= "height: 50%;
+          width: 50%;"></div>
+        <div class="text13">
+          I will not flirt with the customer who is asking if her big ass looks good in the gingham rayon pants <br/>
+          I will not flirt with the customer who is asking if her big ass looks good in the gingham rayon pants <br/>
+          I will not flirt with the customer who is asking if her big ass looks good in the gingham rayon pants 
+          
+          </div>
+          <a href="sptcl.html"><div class="fourteen"><img src="transparent_ipad_small.png" alt="" style=""></div></a>
+          <div class="text14"></div>
+          
+          <a href="santa.html"><div class="fifteen"><img src="hat.jpg" alt="" style=""></div></a>
+          
+          <div id="extra">
+            <div class="e1"><img src="pic.png" alt="" style="height: 15%; width: 15%;"></div>
+            <div class="et1">Me: I'm a venture capitalist <br>Them: o rlly? <br>Me: yes. I play with money till it becomes so ultimately enticing <br>to everyone else that they want to stick it in their holes. <br>Them: you can't rlly consume capital thru ur anus. <br> Me: it is not about consumption, it is about the destruction of capital. <br>Them: huh? <br>Me: you see I'm on a mission. We all stuff out bodies with <br>enough bread and then... <br><br>To be continued. </div>
+            <div class="e2"><img src="pic2.png" alt=""style="height: 15%; width: 15%;"></div>
+            <div class="et2">I'm bound by irreparable forms of resistance. <br> This is a white flag on a walk and I will kill. <br> Every day a hair dryer video appears is another day without my anti-dumb bitch juice pills. <br><br>Reblog this for a surprise visit at night</div>
+            <div class="e3"><img src="pic3.png" alt="" style="height: 30%; width: 30%;"></div>
+            <div class="et3">The conspiracy around the word "moist" is a living meme.</div>
+            <div class="e4"><img src="pic4.png" alt="" style="height: 15%; width: 15%;"></div>
+            <div class="et4">I learned the word "cunt" when it spit violently out of my father's mouth towards my mother's direction.</div>
+            <div class="e5"><img src="pic5.png" alt="" style="height: 15%; width: 15%;"></div>
+            <div class="et5">I lived laughed loved my way into a fucking coma</div>
+            <div class="e6"><img src="pic6.png" alt="" style="height: 15%; width: 15%;"></div>
+            <div class="et6">My airdrop is always open</div>
+            <div class="e7"><img src="pic7.png" alt="" style="height: 15%; width: 15%;"></div>
+            <div class="et7">All I wanted was to squirt blood in your mouth. All I wanted. That’s all. 
+            </div>
+            <div class="e8"><img src="pic8.png" alt="" style="height: 15%; width: 15%;"></div>
+            <div class="et8">Overheard conversation <br><br>"Don't meet your girl at a bar. My ex-wife is a whore and I met her at a bar. We had group sex on our wedding night... And I wasn't participating." <br><br> LMAO</div>
+            
+          </div>
+          
+          <div id="extra2">
+            <div class="r1"><img src="e1.png" style="height: 5%; width: 5%;" alt=""></div>
+            <div class="rt1">But srsly tho, stop trying to make fetch happen. <br>Have a good gay!</div>
+            <div class="r2"><img src="e2.png" alt="" style="height: 8%; width: 8%;"></div>
+            <div class="rt2">I sewed two legs of jeans together to make a long jean noodle. <br>Wearing it around my neck as a scarf I imagined your long jean legs squeezing <br>my neck as I went down. The rug attached to the split of the <br>jean noodle. I slurp your Baja Blast TM rug juice. <br>Inebriated by the drunken high that is my withdrawal. <br>I fuck myself in and I have sweet dreams.</div>
+            <div class="r3"><img src="e3.png" alt="" style="height: 5%; width: 5%;"></div>
+            <div class="rt3">You're just a moist panopticon haircut waiting to happen.</div>
+            <div class="r4"><img src="e4.png" alt="" style="height: 5%; width: 5%;"></div>
+            <div class="rt4">High and fucking in the shower at the sex club. <br><br>Afterwards I sit on the couch watching a 70s porno as Cardi B puts <br>a blanket over my naked body.</div>
+            <div class="r5"><img src="e5.png" alt="" style="height: 5%; width: 5%;"></div>
+            <div class="rt5">Who else wants to kill Bill today?</div>
+            <div class="r6"><img src="e6.png" alt="" style="height: 5%; width: 5%;"></div>
+            <div class="rt6">An exhibition of my close friends list, where only one person is added to the list. <br><br>A performative dm thru images and thoughts without any <br>need for reciprocation. This person is not even a close friend. <br>You just feel the need to give them a show. <br>Exhibitionism at its finest. <br><br>I have no need for this sad blog.</div>
+            <div class="r7"><img src="e7.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="rt7">Her: *wraps Dolce and Gabbana jeans around neck* did you <br>know that if you put the jeans around your neck and the <br>ends touch they will fit? <br>Me: oh so as if your jeans choked you <br>Her: only when they're off </div>
+            <div class="r8"><img src="e8.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="rt8">Customer: is the store separated by Men's and Women's Clothing? Or is it all unisex? <br>Me: unfortunately we market the binary, but if you don't care everything is unisex. <br>Customer: cool</div>
+            <div class="r9"><img src="e9.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="rt9">Horse camp taught me dom-sub relationships. <br>
+              Horse camp gave me mommy issues more than my own mother did. <br>
+              Horse camp emotionally dommed me out of 1st place. <br>
+              Horse camp let run away from social anxiety. <br>
+              Horse camp popped my cherry. <br>
+              Horse camp connected me to the first openly out lesbian I would know. <br>
+              Horse camp gave me hope. <br>
+            </div>
+            <div class="r10"><img src="e10.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="rt10">Me: who would you want to sponsor you? <br>
+              Him: Porsche. I love their cars. I would be able to live fashionably in a rlly nice car. <br>
+              Me: ... <br>
+              Him: who would you want to sponsor you?<br>
+              Me: my landlord <br>
+              Him: huh?  <br>
+              Me: so I would’t have to pay rent bitch <br>
+            </div>
+          </div>
+          <div id="extra3">
+            <div class="s1"><img src="e11.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="st1">OkMiGlOlMmGeO
+              <br><br>
+              OfMuGcOkMoGfOfM
+              <br><br>
+              ObMiGtOeMmGeO
+              <br><br>
+              OcMuGmOhMeGrOeM
+              <br><br>
+              OgMoGaOwMaGyO
+              <br><br>
+              (BAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA)
+            </div>
+            <div class="s2"><img src="e12.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="st2">Just to let you know this dm convo made me rlly… overcook my pasta 
+            </div>
+            <div class="s3"><img src="e13.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="st3">Me: yeah I did it with a screwdriver once <br>
+              Them: from 1 to screwdriver to 10 how am I  <br>
+              Me: I imagine using your butt plug as a doorknob <br>
+              Them: how good am I <br>
+              Me: let’s put a blow dryer up your ass and find out <br>
+              Them: but how good am I <br>
+              Me: I’ll fill your ass with air until you explode <br>
+              Them: but butt <br>
+              Me: that’s what it means to blow you dry <br>
+            </div>
+            <div class="s4"><img src="e14.png" alt="" style="height: 40%; width: 40%;"></div>
+            <div class="st4">Certain words in my mouth just don’t quite fit. <br>That’s why I use simple words, small words, dumb words, sweet words. 
+              <br><br>
+              Elucidate me with your sweet fine dumb words 
+            </div>
+            <div class="s5"><img src="e15.png" alt="" style="height: 50%; width: 50%;"></div>
+            <div class="st5">Potluck stripper</div>
+            <div class="s6"><img src="e16.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="st6">If I die I want to be buried in this outfit.  <br>
+              I want this to be my ghost outfit.  <br>
+              Haunt ppl in this outfit.  <br>
+              A giant long sweatshirt person.  <br>
+              Pls don’t let my mom pick out my death outfit.  <br>
+              What kind of fabrics are best for death outfits? <br>
+              I just want to be a long sweatshirt.  <br>
+              Gray heathered and solid marmalade.  <br>
+              Gimme some of those ugly running shoes that euro bitches used to wear ironically <br> back in 2014. The ones with the fabric mesh holes. ASICS, but generic. <br> 
+              They pretend to occupy the dress of extremism, but it falls short in the <br> privilege of their $400 slacks.  <br>
+              Replaced by Balenciagas, I weep.</div>
+            <div class="s7"><img src="e17.png" alt="" style="height: 20%; width: 20%;"></div>
+            <div class="st7">We all sat in a circle.<br> Legs touching just enough that we didn’t have to scream. <br>Passing around a book we read each part.<br> On my turn I read very slowly.<br> Have you ever seen those videos of girls reading while they are sitting on a vibrator until they orgasm?<br> It was like that except nothing was inside of me.<br> I slowly spit out words until I don’t even know what the sentence was,<br> but I bursted out “I DONT WANT TO FUCK JESUS!!!” <br>Then I ran to the kitchen and started talking <br>about monkeys climbing trees with someone. 
+            </div>
+            <div class="s8"><img src="e18.png" alt="" style="height: 10%; width: 10%;"></div>
+            <div class="st8">Find yourself a person with long hands and nail extensions <br> who rlly knows how to use them <br><br>
+              
+              Shits great
+            </div>
+            
+          </div>
+        </div>
+        
+      </body>
+      </html>
+        
