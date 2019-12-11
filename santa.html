@@ -16,12 +16,12 @@
           ball.appendTo("body");
           ball.x = 160;
           ball.y = 200;
-          divs.push(ball); 
+          divs.push(ball);
         }
-        
+
         var mouseX = 0,
             mouseY = 0;
-        
+
         $(document).mousemove(function(e){
           mouseX = e.pageX;
           mouseY = e.pageY;
@@ -31,12 +31,12 @@
           mouseX = touch[0].pageX;
           mouseY = touch[0].pageY;
         });
-        
+
         setInterval(function(){
           var curr = divs[0];
           curr.x += (mouseX - curr.x) / 4;
           curr.y += (mouseY - curr.y) / 4;
-          
+
           curr.css({webkitTransform : "translate3d("+curr.x+"px,"+curr.y+"px,0px)"});
           for(var i = 1; i < divs.length; i++){
             curr = divs[i];
@@ -44,18 +44,18 @@
             curr.x += (prev.x - curr.x) / 4;
             curr.y += (prev.y - curr.y) / 4;
             curr.css({webkitTransform : "translate3d("+curr.x+"px,"+curr.y+"px,0px)"});
-            
+
           }
         }, 30);
       });
     </script>
     <style>
-      
+
       body, html {
         background-color: white;
          cursor: url("coolcursortest.jpg"), pointer;
       }
-      
+
       /*body {
         position: fixed;
         background-color: transparent;
@@ -64,19 +64,19 @@
         white-space: nowrap;
         cursor: url("coolcursortest.jpg"), pointer;
       }*/
-      
+
       div.text {
         color: black;
         font-size: 16px;
-        font-family: Times; 
+        font-family: Times;
         font-weight: bolder;
         position: fixed;
         top: 10%;
         left: 0%;
       }
-      
-      
-      
+
+
+
       .pic {
         transition: box-shadow .3s;
         width: 80px;
@@ -84,7 +84,7 @@
         position: fixed;
         top: 0px;
         left: 0px;
-        
+
       }
       .pic:hover {
         box-shadow: 5px 5px 7px black;
@@ -92,9 +92,9 @@
       span {
       font-size: 20pt;
         color: red;
-       
+
       }
-       
+
       .ball {
         position: fixed;
         width: 10px;
@@ -103,22 +103,22 @@
         background-color: red;
         -webkit-transform: translate3d(160px, 200px, 0px);
       }
-     /* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/special/spe-1/spe81.cur), auto !important;} /* End 
-      
+     /* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/special/spe-1/spe81.cur), auto !important;}
+
     </style>
   </head>
   <body>
-  
-    <a href="Main.html"><div class="pic"><img src="hat.jpg" alt="" style= "position: fixed; top: 0%; left: 0%;"></div></a><br>
-    
-    <div id="content" body style="margin: 0px; height: 100%; width: 100%;"> 
+
+    <a href="index.html"><div class="pic"><img src="hat.jpg" alt="" style= "position: fixed; top: 0%; left: 0%;"></div></a><br>
+
+    <div id="content" body style="margin: 0px; height: 100%; width: 100%;">
     </div>
-    
+
     <div class="text" style="height: 100%; width: 1000px;"><span>If the fattest house doubts a school wantonly then the radiant whip falls gregariously.</span>
 <br><br><br><br>
 “Santa’s Baby”<br><br><br><br>
 It wasn’t in the biggest house, it was in the fattest house.<br> What this has to do with physics, I don’t know. <br>Basically, in all honesty, it does not matter how rich a kid’s ‘rents are, if they do something stupid the whip is going to crack where it is going to crack. <br>If only Jonny didn’t set the trash can in physics class on fire.<br> Keep calm and burn on I guess.<br> Oh toke, the symbol of apathy. <br>How funny it would be if, well, there were two fires? We could say one in the boy’s head and the other in his balls, but lets be serious. <br>This is a school conundrum. <br>Jonny’s parents didn’t know of the boy’s foolish behavior, this was the first they had heard of it.<br> Admittedly, setting a trashcan on fire sounds pretty terrible for a first school offense.<br> The ‘rents had been too busy mingling at the over 40 golf club and drinking champagne on their boat,“Santa’s Baby.”<br> The name comes from the fact that they got the boat on Christmas and that every winter they nestle it into the two-car garage of their ugly McMansion, caring for it more than their own son. <br>The school doubts them gregariously.<br> It is easy for parents to push the blame on the school, especially when they’re spending a good amount to send him to private school.<br> They are too busy wearing their shades to see that if they don’t crack the whip and tie some knots that Jonny will be on his way to juvie faster than the combustion of a garbage can.
 </div>
-      
+
   </body>
 </html>
