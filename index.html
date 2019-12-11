@@ -6,7 +6,7 @@
         cursor:pointer;
       }
     </style>
-    
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,46 +15,46 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
       $(function(){
-        
+
         var canvas = $("#canvas")[0];
         var c = canvas.getContext("2d");
-        
+
         c.fillStyle = "black";
         c.fillRect(0, 0, canvas.width, canvas.height);
-        
+
         $(document).mousemove(function(e){
         c.fillStyle = "white";
         c.fillRect(e.pageX, e.pageY, 10, 10);
         });
-        
+
        });
       $(function(){
-        
+
         var canvas3 = $("#canvas3")[0];
         var c3 = canvas3.getContext("2d");
-        
+
         c3.fillStyle = "black";
         c3.fillRect(0, 0, canvas3.width, canvas3.height);
-        
+
         $(document).mousemove(function(e){
         c3.fillStyle = "red";
         c3.fillRect(e.pageX, e.pageY, 25, 25);
         });
-        
+
        });
       $(function(){
-        
+
         var canvas2 = $("#canvas2")[0];
         var c2 = canvas2.getContext("2d");
-        
+
         c2.fillStyle = "black";
         c2.fillRect(0, 0, canvas2.width, canvas2.height);
-        
+
         $(document).mousemove(function(e){
         c2.fillStyle = "yellow";
         c2.fillRect(e.pageX, e.pageY, 5, 5);
         });
-        
+
        });
       function myFunction() {
         var x = document.getElementById("extra");
@@ -104,12 +104,12 @@
           x.style.display = "none";
         }
       }
-      
+
     </script>
     <style>
-      
-      
-      
+
+
+
       body {
         position: fixed;
         background-color: black;
@@ -118,12 +118,12 @@
         white-space: nowrap;
         cursor: url("coolcursortest.jpg"), pointer;
       }
-      
-      
+
+
       div.one {
         position: fixed;
         top: 15%;
-        left: 34%;  
+        left: 34%;
       }
       div.text1 {
         color: white;
@@ -138,11 +138,11 @@
       div.one:hover + div.text1{
         display: inline;
       }
-      
+
       div.two {
         position: fixed;
         top: 50%;
-        left: 65%;  
+        left: 65%;
       }
       div.text2 {
         color: white;
@@ -157,11 +157,11 @@
       div.two:hover + div.text2{
         display: inline;
       }
-      
+
       div.three {
         position: fixed;
         top: 80%;
-        left: 60%;  
+        left: 60%;
       }
       div.text3 {
         color: white;
@@ -176,11 +176,11 @@
       div.three:hover + div.text3{
         display: inline;
       }
-      
+
       div.four {
         position: fixed;
         top: 65%;
-        left: 15%;  
+        left: 15%;
       }
       div.text4 {
         color: white;
@@ -195,12 +195,12 @@
       div.four:hover + div.text4{
         display: inline;
       }
-      
+
       div.five {
         position: fixed;
         top: 2%;
-        left: 25%; 
-        z-index: 1; 
+        left: 25%;
+        z-index: 1;
       }
       div.text5 {
         color: white;
@@ -215,22 +215,22 @@
       div.five:hover{
         box-shadow: 2px 2px 5px blue;
       }
-      
+
       div.six {
         position: fixed;
         top: 20%;
-        left: 2%; 
-        z-index: 1; 
+        left: 2%;
+        z-index: 1;
       }
-      
+
       div.six:hover{
         box-shadow: 2px 2px 5px pink;
       }
-      
+
       div.seven {
         position: fixed;
         top: 10%;
-        left: 88%;  
+        left: 88%;
       }
       div.text7 {
         color: white;
@@ -245,22 +245,22 @@
       div.seven:hover + div.text7{
         display: inline;
       }
-      
+
       div.eight {
         position: fixed;
         top: 2%;
-        left: 70%; 
-        z-index: 1; 
+        left: 70%;
+        z-index: 1;
       }
-      
+
       div.eight:hover{
         box-shadow: 2px 2px 5px yellow;
       }
-      
+
       div.nine {
         position: fixed;
         top: 70%;
-        left: 88%;  
+        left: 88%;
         z-index: 1;
       }
       div.text9 {
@@ -272,16 +272,16 @@
         top: 35%;
         display: none;
         z-index: 2;
-        
+
       }
       div.nine:hover{
         box-shadow: 2px 2px 5px lime;
       }
-      
+
       div.ten {
         position: fixed;
         top: 88%;
-        left: 0%;  
+        left: 0%;
       }
       div.text10 {
         color: white;
@@ -299,7 +299,7 @@
       div.eleven {
         position: fixed;
         top: 50%;
-        left: 30%;  
+        left: 30%;
       }
       div.text11 {
         color: white;
@@ -317,7 +317,7 @@
       div.twelve {
         position: fixed;
         top: 30%;
-        left: 50%;  
+        left: 50%;
         z-index: 1;
       }
       div.text12 {
@@ -329,7 +329,7 @@
         top: 20%;
         display: none;
         z-index: 2;
-        
+
       }
       div.twelve:hover + div.text12{
         display: inline;
@@ -337,7 +337,7 @@
       div.thirteen {
         position: fixed;
         top: 45%;
-        left: 80%; 
+        left: 80%;
       }
       div.text13 {
         color: white;
@@ -370,11 +370,11 @@
       div.fifteen:hover{
         box-shadow: 2px 2px 5px green;
       }
-      
+
       #extra {
         display: none;
       }
-      
+
       .e1 {
         position: fixed;
         top:10%;
@@ -393,7 +393,7 @@
       div.e1:hover + div.et1{
         display: inline;
       }
-      
+
       .e2 {
         position: fixed;
         top:44%;
@@ -520,7 +520,7 @@
       div.e8:hover + div.et8{
         display: inline;
       }
-      
+
       .r1 {
         position: fixed;
         top:10%;
@@ -539,7 +539,7 @@
       div.r1:hover + div.rt1{
         display: inline;
       }
-      
+
       .r2 {
         position: fixed;
         top:44%;
@@ -684,7 +684,7 @@
       div.r9:hover + div.rt9{
         display: inline;
       }
-      
+
       .r10 {
         position: fixed;
         top:90%;
@@ -703,7 +703,7 @@
       div.r10:hover + div.rt10{
         display: inline;
       }
-      
+
       .s1 {
         position: fixed;
         top:90%;
@@ -722,7 +722,7 @@
       div.s1:hover + div.st1{
         display: inline;
       }
-      
+
       .s2 {
         position: fixed;
         top:85%;
@@ -849,16 +849,16 @@
       div.s8:hover + div.st8{
         display: inline;
       }
-      
-      
-      
+
+
+
       #extra2 {
         display: none;
       }
-      
+
       #extra3 {
         display: none;
-      } 
+      }
       #canvas {
       display: none;
       }
@@ -868,8 +868,8 @@
       #canvas3 {
       display: none;
       }
-      
-      /* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/special/spe-1/spe89.cur), auto !important;} /* End 
+
+      /* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/special/spe-1/spe89.cur), auto !important;}
     </style>
   </head>
   <body>
@@ -879,11 +879,11 @@
       <button onclick="myFunction4()">!</button>
       <button onclick="myFunction5()">!!</button>
       <button onclick="myFunction6()">!!!</button>
-      
-      
+
+
       <div id="container">
-        
-        <div id="content" body style="margin: 0px; height: 100%; width: 100%;"> 
+
+        <div id="content" body style="margin: 0px; height: 100%; width: 100%;">
         </div>
         <canvas id="canvas" width="2000px" height="1000px">
       Go get chrome! <!-- default msg displayed if canvas fails -->
@@ -902,7 +902,7 @@
         <div class="text3"> Me screaming "I JUST WANT TO FUCK THE TACO BELL SOCIAL MEDIA INTERN"<br> at my friend who is just trying to have a chill time eating Doritos<br> on the couch</div>
         <div class="four"><img src="girls4.png" alt="" style= ""></div>
         <div class="text4"> How to kill <br/>
-          
+
           2 birds 1 stone <br/>
           2 cups 1 girl<br/>
           2 stones 1 bird<br/>
@@ -918,17 +918,17 @@
         <a href="emails.html"><div class="five"><img src="girls5.png" alt="" style= ""></div></a>
         <div class="text5"> Me bopping to the phrase “damn bitch who hurt you?” <br> 69 times in the past 2 minutes </div>
         <a href="love.html"> <div class="six"><img src="girls6.png" alt="" style= ""></div></a>
-        
+
         <div class="seven"><img src="girls7.png" alt="" style= ""></div><div class="text7"> Me @ my anxiety about my knife dilemma</div>
         <a href="nyc.html"> <div class="eight"><img src="image.png" alt="" style= ""></div></a>
-        
+
         <a href="Hairelastic.html"><div class="nine"><img src="image2.png" alt="" style= ""></div></a>
         <div class="text9"> Me bopping to the phrase “damn bitch who hurt you?” <br> 69 times in the past 2 minutes </div>
         <div class="ten"><img src="image3.png" alt="" style= ""></div>
         <div class="text10">I used to imagine telling ppl that <br> I’m two types of “bi” but I can’t <br> do that cuz I am actually just a pan
         </div>
         <div class="eleven"><img src="image4.png" alt="" style= ""></div>
-        <div class="text11"> Me bopping to the phrase “damn bitch who hurt you?” <br> 69 times in the past 2 minutes </div> 
+        <div class="text11"> Me bopping to the phrase “damn bitch who hurt you?” <br> 69 times in the past 2 minutes </div>
         <div class="twelve"><img src="image5.png" alt="" style= ""></div>
         <div class="text12">You: come over to my house <br> Me: I can’t I’m working <br>You: I’m doing arts and crafts <br>Me: <br/><img src="bigpic.png" alt="">
         </div>
@@ -937,14 +937,14 @@
         <div class="text13">
           I will not flirt with the customer who is asking if her big ass looks good in the gingham rayon pants <br/>
           I will not flirt with the customer who is asking if her big ass looks good in the gingham rayon pants <br/>
-          I will not flirt with the customer who is asking if her big ass looks good in the gingham rayon pants 
-          
+          I will not flirt with the customer who is asking if her big ass looks good in the gingham rayon pants
+
           </div>
           <a href="sptcl.html"><div class="fourteen"><img src="transparent_ipad_small.png" alt="" style=""></div></a>
           <div class="text14"></div>
-          
+
           <a href="santa.html"><div class="fifteen"><img src="hat.jpg" alt="" style=""></div></a>
-          
+
           <div id="extra">
             <div class="e1"><img src="pic.png" alt="" style="height: 15%; width: 15%;"></div>
             <div class="et1">Me: I'm a venture capitalist <br>Them: o rlly? <br>Me: yes. I play with money till it becomes so ultimately enticing <br>to everyone else that they want to stick it in their holes. <br>Them: you can't rlly consume capital thru ur anus. <br> Me: it is not about consumption, it is about the destruction of capital. <br>Them: huh? <br>Me: you see I'm on a mission. We all stuff out bodies with <br>enough bread and then... <br><br>To be continued. </div>
@@ -959,13 +959,13 @@
             <div class="e6"><img src="pic6.png" alt="" style="height: 15%; width: 15%;"></div>
             <div class="et6">My airdrop is always open</div>
             <div class="e7"><img src="pic7.png" alt="" style="height: 15%; width: 15%;"></div>
-            <div class="et7">All I wanted was to squirt blood in your mouth. All I wanted. That’s all. 
+            <div class="et7">All I wanted was to squirt blood in your mouth. All I wanted. That’s all.
             </div>
             <div class="e8"><img src="pic8.png" alt="" style="height: 15%; width: 15%;"></div>
             <div class="et8">Overheard conversation <br><br>"Don't meet your girl at a bar. My ex-wife is a whore and I met her at a bar. We had group sex on our wedding night... And I wasn't participating." <br><br> LMAO</div>
-            
+
           </div>
-          
+
           <div id="extra2">
             <div class="r1"><img src="e1.png" style="height: 5%; width: 5%;" alt=""></div>
             <div class="rt1">But srsly tho, stop trying to make fetch happen. <br>Have a good gay!</div>
@@ -1017,7 +1017,7 @@
               (BAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA)
             </div>
             <div class="s2"><img src="e12.png" alt="" style="height: 10%; width: 10%;"></div>
-            <div class="st2">Just to let you know this dm convo made me rlly… overcook my pasta 
+            <div class="st2">Just to let you know this dm convo made me rlly… overcook my pasta
             </div>
             <div class="s3"><img src="e13.png" alt="" style="height: 10%; width: 10%;"></div>
             <div class="st3">Me: yeah I did it with a screwdriver once <br>
@@ -1031,9 +1031,9 @@
               Me: that’s what it means to blow you dry <br>
             </div>
             <div class="s4"><img src="e14.png" alt="" style="height: 40%; width: 40%;"></div>
-            <div class="st4">Certain words in my mouth just don’t quite fit. <br>That’s why I use simple words, small words, dumb words, sweet words. 
+            <div class="st4">Certain words in my mouth just don’t quite fit. <br>That’s why I use simple words, small words, dumb words, sweet words.
               <br><br>
-              Elucidate me with your sweet fine dumb words 
+              Elucidate me with your sweet fine dumb words
             </div>
             <div class="s5"><img src="e15.png" alt="" style="height: 50%; width: 50%;"></div>
             <div class="st5">Potluck stripper</div>
@@ -1046,21 +1046,20 @@
               What kind of fabrics are best for death outfits? <br>
               I just want to be a long sweatshirt.  <br>
               Gray heathered and solid marmalade.  <br>
-              Gimme some of those ugly running shoes that euro bitches used to wear ironically <br> back in 2014. The ones with the fabric mesh holes. ASICS, but generic. <br> 
+              Gimme some of those ugly running shoes that euro bitches used to wear ironically <br> back in 2014. The ones with the fabric mesh holes. ASICS, but generic. <br>
               They pretend to occupy the dress of extremism, but it falls short in the <br> privilege of their $400 slacks.  <br>
               Replaced by Balenciagas, I weep.</div>
             <div class="s7"><img src="e17.png" alt="" style="height: 20%; width: 20%;"></div>
-            <div class="st7">We all sat in a circle.<br> Legs touching just enough that we didn’t have to scream. <br>Passing around a book we read each part.<br> On my turn I read very slowly.<br> Have you ever seen those videos of girls reading while they are sitting on a vibrator until they orgasm?<br> It was like that except nothing was inside of me.<br> I slowly spit out words until I don’t even know what the sentence was,<br> but I bursted out “I DONT WANT TO FUCK JESUS!!!” <br>Then I ran to the kitchen and started talking <br>about monkeys climbing trees with someone. 
+            <div class="st7">We all sat in a circle.<br> Legs touching just enough that we didn’t have to scream. <br>Passing around a book we read each part.<br> On my turn I read very slowly.<br> Have you ever seen those videos of girls reading while they are sitting on a vibrator until they orgasm?<br> It was like that except nothing was inside of me.<br> I slowly spit out words until I don’t even know what the sentence was,<br> but I bursted out “I DONT WANT TO FUCK JESUS!!!” <br>Then I ran to the kitchen and started talking <br>about monkeys climbing trees with someone.
             </div>
             <div class="s8"><img src="e18.png" alt="" style="height: 10%; width: 10%;"></div>
             <div class="st8">Find yourself a person with long hands and nail extensions <br> who rlly knows how to use them <br><br>
-              
+
               Shits great
             </div>
-            
+
           </div>
         </div>
-        
+
       </body>
       </html>
-        
