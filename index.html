@@ -112,8 +112,77 @@
 
     </script>
     <style>
+    /* for the info menu */
+      .top {
+        position: fixed;
+        width:50%;
+        z-index: 999;
+      }
+
+      /* #question {
+        height: 25px;
+      } */
+
+      .info {
+        position: fixed;
+        font-size: 26px;
+        color: blue;
+        z-index: 999;
+        top: 10px;
+        right: 10px;
+        padding:0px 0px;
+        margin-left:0px;
+        margin-top:0px;
+        margin-bottom:0px;
+      }
+
+      #tag-menu {
+        display:none;
+      }
 
 
+      #tag-menu:checked ~ div.drawer {
+       animation: slide-out 0.5s ease;
+       animation-fill-mode: forwards;
+      }
+
+      /* linear-gradient(to right, , rgba(255,0,0,0)); */
+      .drawer {
+        background: #DDDCEE;
+        position:fixed;
+        top: 0;
+        right:-500px;
+        height:100%;
+        z-index:100;
+        width:450px;
+        animation: slide-in 0.5s ease;
+        animation-fill-mode: forwards;
+        margin-top: 0px;
+        /* eventually make scroll within a div */
+      }
+
+      #whole {
+        text-align: justify;
+        margin-top: 35px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 35px;
+        color: black;
+        font: Arial;
+        font-size: 15px;
+        overflow-y: auto;
+        height: 90%;
+      }
+
+      @keyframes slide-in {
+       from {right: 0px;}
+       to {right: -450px;}
+      }
+
+      @keyframes slide-out {
+       from {right: -450px;}
+       to {right: 0px;}
+      }
 
       body {
         position: fixed;
@@ -878,6 +947,22 @@
     </style>
   </head>
   <body>
+
+    <div class="top">
+      <input type="checkbox" id="tag-menu" />
+      <label class="info" for="tag-menu">
+        ?
+      </label>
+      <div class="drawer">
+        <p id = "whole" >
+          Kim <br />
+          <br />
+
+
+        </p>
+      </div>
+    </div>
+
     <button onclick="myFunction()">:)</button>
     <button onclick="myFunction2()">:|</button>
     <button onclick="myFunction3()"><3</button>
